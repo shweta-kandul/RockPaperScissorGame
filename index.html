@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* necessary to center vertically */
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .game {
+        border: 2px solid black;
+        height: 350px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button-group {
+        display: flex;
+
+        align-items: center;
+      }
+
+      .btn {
+        padding: 10px;
+        margin: 5px;
+        background-color: aqua;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .resultcount {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game">
+      <div class="resultcount">
+        <p id="userCount">Your Points: 0</p>
+        <p id="compCount">Computer Points: 0</p>
+      </div>
+      <h3>Select One</h3>
+
+      <div class="button-group">
+        <button class="btn" value="Rock">Rock</button>
+        <button class="btn" value="Paper">Paper</button>
+        <button class="btn" value="Scissor">Scissor</button>
+      </div>
+      <p id="userComSelected"></p>
+      <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
