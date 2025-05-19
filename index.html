@@ -28,12 +28,15 @@
         align-items: center;
       }
 
-      .btn {
+      .btn ,#resetBtn{
         padding: 10px;
         margin: 5px;
         background-color: aqua;
         border-radius: 5px;
         cursor: pointer;
+      }
+      #resetBtn{
+        background-color: rgb(71, 235, 150);
       }
       .resultcount {
         display: flex;
@@ -56,6 +59,8 @@
       </div>
       <p id="userComSelected"></p>
       <p id="result"></p>
+
+      <button  id="resetBtn">Reset</button>
     </div>
 
     <script src="script.js"></script>
